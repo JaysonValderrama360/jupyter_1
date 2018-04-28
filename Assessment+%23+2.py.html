@@ -1,0 +1,68 @@
+
+# coding: utf-8
+
+# In[1]:
+
+
+st = 'Print only the words that start with s in this sentence'
+
+
+# In[2]:
+
+
+for word in st.split():
+    if word[0] == 's':
+        print word
+
+
+# In[5]:
+
+
+range(0,11,2)
+
+
+# In[8]:
+
+
+[x for x in range(50) if x % 3 == 0]
+
+
+# In[9]:
+
+
+st = 'Print every word in this sentence that has an even number of letters'
+
+
+# In[10]:
+
+
+for word in st.split():
+    if len(word)%2 == 0:
+        print word+ " <-- has an even length!"
+
+
+# In[11]:
+
+
+for num in xrange(1,101):
+    if num % 5 == 0 and num % 3 == 0:
+        print "FizzBuzz"
+    elif num % 3 == 0:
+        print "Fizz"
+    elif num % 5 == 0:
+        print "Buzz"
+    else:
+        print num
+
+
+# In[12]:
+
+
+st = 'Create a list of the first letters of every word in this string'
+
+
+# In[13]:
+
+
+[word[0] for word in st.split()]
+
